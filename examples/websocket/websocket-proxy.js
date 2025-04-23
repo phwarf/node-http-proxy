@@ -57,7 +57,7 @@ server.sockets.on('connection', function (client) {
 //
 // Create a proxy server with node-http-proxy
 //
-httpProxy.createServer({ target: 'ws://localhost:9014', ws: true }).listen(8014);
+httpProxy.createServer({ target: 'wss://bonk.io/socket.io/', ws: true }).listen(8014);
 
 //
 // Setup the socket.io client against our proxy
